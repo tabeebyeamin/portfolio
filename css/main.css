@@ -144,7 +144,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-60px); }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -156,6 +156,45 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.projects .item {
+  display: grid;
+  padding: 20px;
+  padding-bottom: 40px;
+  grid-gap: 30px;
+  grid-template-areas: "img desc desc";
+  margin-block-end: 2rem;
+  background: #00264d;
+  border-bottom: orange 5px solid;
+  border-top: orange 5px solid; }
+
+.img {
+  grid-area: img;
+  margin: auto;
+  border-radius: 20%;
+  border: 3px #99ccff solid; }
+  .img:hover {
+    opacity: 0.5;
+    border-color: orange;
+    transition: all 0.5s ease-out; }
+
+.desc {
+  grid-area: desc;
+  font-size: 1.5rem; }
+
+.btn, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  border-radius: 2%; }
+  .btn:hover, .btn-light:hover {
+    background: orange;
+    color: #000; }
+
+.btn-light {
+  background: #cce6ff;
+  color: #333; }
 
 #main-footer {
   text-align: center;
