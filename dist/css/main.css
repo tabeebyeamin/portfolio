@@ -157,6 +157,28 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+.about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio";
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: orange 3px solid; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+  padding: 20px;
+  padding-bottom: 40px;
+  grid-gap: 30px;
+  margin-block-end: 2rem;
+  background: #00264d;
+  border-bottom: orange 5px solid; }
+
 .projects .item {
   display: grid;
   padding: 20px;
@@ -239,7 +261,10 @@ main {
     .menu-branding .portrait {
       background: url("../img/portrait_small.jpg");
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

@@ -67,6 +67,30 @@ main {
   }
 }
 
+.about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio";
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+  padding: 20px;
+  padding-bottom: 40px;
+  grid-gap: 30px;
+  margin-block-end: 2rem;
+  background: darken($primary-color, 5);
+  border-bottom: $secondary-color 5px solid;
+}
 // Work/Projects
 .projects {
   .item {
