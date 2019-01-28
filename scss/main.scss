@@ -69,7 +69,9 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio";
+  grid-template-areas:
+    "bioimage bio bio"
+    "skill1 skill2 skill3";
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -87,10 +89,26 @@ main {
   padding: 20px;
   padding-bottom: 40px;
   grid-gap: 30px;
-  margin-block-end: 2rem;
+}
+
+.skill-1 {
+  grid-area: skill1;
+}
+
+.skill-2 {
+  grid-area: skill2;
+}
+
+.skill-3 {
+  grid-area: skill3;
+}
+
+.skill {
   background: darken($primary-color, 5);
+  padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
 }
+
 // Work/Projects
 .projects {
   .item {

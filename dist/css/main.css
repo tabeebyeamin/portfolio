@@ -159,7 +159,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio";
+  grid-template-areas: "bioimage bio bio" "skill1 skill2 skill3";
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr); }
 
@@ -174,9 +174,20 @@ main {
   font-size: 1.5rem;
   padding: 20px;
   padding-bottom: 40px;
-  grid-gap: 30px;
-  margin-block-end: 2rem;
+  grid-gap: 30px; }
+
+.skill-1 {
+  grid-area: skill1; }
+
+.skill-2 {
+  grid-area: skill2; }
+
+.skill-3 {
+  grid-area: skill3; }
+
+.skill {
   background: #00264d;
+  padding: 0.5rem;
   border-bottom: orange 5px solid; }
 
 .projects .item {
@@ -263,7 +274,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio";
+    grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
