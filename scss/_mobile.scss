@@ -54,6 +54,13 @@
       "skill3";
     grid-template-columns: 1fr;
   }
+  .projects {
+    .item {
+      grid-template-areas:
+        "img"
+        "desc";
+    }
+  }
 }
 
 // Smartphones

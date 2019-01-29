@@ -275,7 +275,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects .item {
+    grid-template-areas: "img" "desc"; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
