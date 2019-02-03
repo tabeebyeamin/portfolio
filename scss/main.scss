@@ -181,23 +181,27 @@ main {
 
 .form {
   display: grid;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  grid-gap: 30px;
+  grid-template-areas: "img desc desc";
+  margin-block-end: 2rem;
 }
 
-input {
+input,
+textarea {
   width: 100%;
+  padding: 0.5rem;
   margin: 20px 0;
   background: rgba(0, 0, 0, 0);
   border: none;
+  color: white;
+  font-size: 16px;
   border-bottom: 1px solid $secondary-color;
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: rgb(110, 108, 108);
   font-size: 16px;
   letter-spacing: 2px;
 }

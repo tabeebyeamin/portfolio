@@ -44,14 +44,36 @@
     </header>
     <main id="contact">
       <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">Have any questions? Shoot an email my way.</h2>
+      <h2 class="sm-heading">
+        Have any questions? Shoot an email my way! Provide your name, email and
+        message.
+      </h2>
 
       <div class="form">
         <form>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="E-Mail" />
-          <input type="text" placeholder="Message" />
-          <button type="button">Let's Talk</button>
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Name"
+            required
+          />
+          <input
+            name="email"
+            type="text"
+            class="form-control"
+            placeholder="E-mail"
+            required
+          />
+          <textarea
+            name="message"
+            class="form-control"
+            placeholder="Message"
+            cols="30"
+            rows="4"
+            required
+          ></textarea>
+          <button type="button">Send</button>
         </form>
       </div>
     </main>
