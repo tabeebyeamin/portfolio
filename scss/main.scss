@@ -179,6 +179,37 @@ main {
 
 // BCS Posters
 
+.form {
+  display: grid;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid $secondary-color;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+button {
+  padding: 20px 32px;
+  font-size: 16px;
+  background: $secondary-color;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+}
 #main-footer {
   text-align: center;
   padding: 1rem;
