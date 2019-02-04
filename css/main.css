@@ -190,7 +190,7 @@ main {
   padding: 0.5rem;
   border-bottom: orange 5px solid; }
 
-.projects .item {
+.projects .item, .projects .pcitem {
   display: grid;
   padding: 20px;
   padding-bottom: 40px;
@@ -201,7 +201,12 @@ main {
   border-bottom: orange 5px solid;
   border-top: orange 5px solid; }
 
-.bcs-posters .item {
+.projects .pcitem {
+  grid-template-areas: "img desc"; }
+  .projects .pcitem .img {
+    max-width: 100%; }
+
+.bcs-posters .item, .bcs-posters .projects .pcitem, .projects .bcs-posters .pcitem {
   display: grid;
   padding: 20px;
   padding-bottom: 40px;
@@ -212,12 +217,12 @@ main {
   border-bottom: orange 5px solid;
   border-top: orange 5px solid; }
 
-.img {
+.img, .projects .pcitem .img {
   grid-area: img;
   margin: auto;
   border-radius: 20%;
   border: 3px #99ccff solid; }
-  .img:hover {
+  .img:hover, .projects .pcitem .img:hover {
     opacity: 0.5;
     border-color: orange;
     transition: all 0.5s ease-out; }
@@ -308,8 +313,10 @@ button {
   .about-info {
     grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
     grid-template-columns: 1fr; }
-  .projects .item {
-    grid-template-areas: "img" "desc"; } }
+  .projects .item, .projects .pcitem {
+    grid-template-areas: "img" "desc"; }
+  .img, .projects .pcitem .img {
+    max-width: 100%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
