@@ -122,6 +122,14 @@ main {
     border-bottom: $secondary-color 5px solid;
     border-top: $secondary-color 5px solid;
   }
+  .pcitem {
+    @extend .item;
+    grid-template-areas: "img desc";
+    .img {
+      @extend .img;
+      max-width: 100%;
+    }
+  }
 }
 
 .bcs-posters {
