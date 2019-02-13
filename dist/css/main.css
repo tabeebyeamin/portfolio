@@ -206,17 +206,21 @@ main {
   .projects .pcitem .img {
     max-width: 100%; }
 
-.bcs-posters .item, .bcs-posters .projects .pcitem, .projects .bcs-posters .pcitem {
-  display: grid;
-  padding: 20px;
-  padding-bottom: 40px;
-  grid-gap: 30px;
-  grid-template-areas: "img desc desc";
-  margin-block-end: 2rem;
-  background: #00264d;
-  border-bottom: orange 5px solid;
-  border-top: orange 5px solid; }
-
+/*
+.bcs-posters {
+  .item {
+    display: grid;
+    padding: 20px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+    grid-template-areas: "img desc desc";
+    margin-block-end: 2rem;
+    background: darken($primary-color, 5);
+    border-bottom: $secondary-color 5px solid;
+    border-top: $secondary-color 5px solid;
+  }
+}
+*/
 .img, .projects .pcitem .img {
   grid-area: img;
   margin: auto;
