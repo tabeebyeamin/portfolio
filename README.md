@@ -10,4 +10,4 @@ Please let me know if there are any issues with it and I will fix it ASAP.
 ![alt_text](https://i.imgur.com/clKfwWM.png)
 
 ----------------------------------------------------------------------------------------------------------------
-The design was inspiration from Brad Traversy: https://github.com/bradtraversy. 
+The design inspiration from Brad Traversy: https://github.com/bradtraversy. 
