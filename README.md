@@ -1,5 +1,5 @@
 # My portfolio Website
-This is a responsive website that I made to show my projects, hobbies and interests. I used node.js and SASS to make it. You can view it at the link https://tabeebyeamin.com
+This is a responsive website that I made to show my projects, hobbies and interests. I used node.js and SASS to make it. You can view it at https://tabeebyeamin.com
 Please let me know if there are any issues with it and I will fix it ASAP. 
 
 ## Here are some sample pages
