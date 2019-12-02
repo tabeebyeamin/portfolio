@@ -1,4 +1,34 @@
 
+body {
+    background: #003366;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; }
+    body#bg-img {
+      background: url(../img/background.jpg);
+      /*background-attachment: fixed;*/
+      background-size: cover;
+                /* Full height */
+        height: 100%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+      
+      body#bg-img:after {
+        content: "";
+        position: center;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background: rgba(0, 51, 102, 0.5); }
+
 .header {
     position: fixed;
     width: 100%;
@@ -9,14 +39,93 @@
     font-size: 25px;
     background-color: #1558cd;
     display: grid;
-    grid-template-areas: "intro experience teaching projects music contact";
+    grid-template-areas: "intro-nav experience-nav teaching-nav projects-nav music-nav contact-nav";
     background: #001a33;
   }
-  .header a {
-    float: left;
-    font-size: 16px;
-    color: white;
+.header a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.greeting{
+    padding-top:50px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+    font-size: 3vw;
+    color:#00264d;
+
+}
+.introduction{
+    padding-left:100px;
+    padding-top:100px;
+    display: grid;
+    grid-template-areas: "intro-block";
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);  
+    font-size: 1.2vw;}
+
+.intro-block {
+    padding-left:50px;
+    background: #00264d;
+    padding: 1em;
+    border-bottom: orange 5px solid; }
+.text-secondary {
+    color: orange; }
+.text-primary {
+    color: #00264d; }
+
+.experiences{
+    margin-top:50vh;
+}
+.exp-title{
+    padding-left:10px;
+    font-size:40px;
+    color:orange;
+}
+.experiences .item, .projects .pcitem {
+    margin-top:20px;
+    display: grid;
+    padding: 20px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+    grid-template-areas: "img desc desc";
+    margin-block-end: 2rem;
+    background: #00264d;
+    border-bottom: orange 5px solid;
+    border-top: orange 5px solid; }
+    
+.experiences .item {
+grid-template-areas: "img desc"; }
+.experiences .item .img {
+    max-width: 80%; }
+
+.img, .experiences .item .img {
+grid-area: img;
+margin: auto;
+border-radius: 20%;
+border: 3px #99ccff solid; }
+.img:hover, .experiences .pcitem .img:hover {
+    opacity: 0.5;
+    border-color: orange;
+    transition: all 0.5s ease-out; }
+
+.desc {
+grid-area: desc;
+font-size: 1.5rem; }
+
+.btn, .btn-light {
+display: block;
+padding: 0.5rem 1rem;
+border: 0;
+margin-bottom: 0.3rem;
+border-radius: 2%; }
+.btn:hover, .btn-light:hover {
+    background: orange;
+    color: #000; }
+
+.btn-light {
+background: #cce6ff;
+color: #333; }
+      
