@@ -1,0 +1,22 @@
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #ffffff;
+    text-align: center;
+    min-height: 50px;
+    font-size: 25px;
+    background-color: #1558cd;
+    display: grid;
+    grid-template-areas: "intro experience teaching projects music contact";
+    background: #001a33;
+  }
+  .header a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
