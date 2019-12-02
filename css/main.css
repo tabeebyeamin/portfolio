@@ -53,12 +53,19 @@ padding: 14px 16px;
 text-decoration: none;
 }
 .greeting{
-    padding-top:15%;
+    padding-top:15vh;
     text-align: center;
     font-size: 3em;
     color:#00264d;
-
 }
+.greeting h2{
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+    background: rgba(0, 56, 112, 0.5);
+}
+
+
+
 .introduction{
     padding-left:100px;
     padding-top:100px;
