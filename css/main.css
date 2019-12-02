@@ -1,6 +1,6 @@
-
 body {
     background: #003366;
+    
     color: #fff;
     height: 100vh;
     margin: 0;
@@ -10,6 +10,7 @@ body {
       background: url(../img/background.jpg);
       /*background-attachment: fixed;*/
       background-size: cover;
+      
                 /* Full height */
         height: 100%; 
 
@@ -22,6 +23,7 @@ body {
       body#bg-img:after {
         content: "";
         position: center;
+        
         top: 0;
         right: 0;
         width: 100vw;
@@ -51,9 +53,9 @@ padding: 14px 16px;
 text-decoration: none;
 }
 .greeting{
-    padding-top:50px;
+    padding-top:15%;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3em;
     color:#00264d;
 
 }
@@ -64,7 +66,7 @@ text-decoration: none;
     grid-template-areas: "intro-block";
     grid-gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);  
-    font-size: 1.2vw;}
+    font-size: 1.5em;}
 
 .intro-block {
     padding-left:50px;
@@ -77,18 +79,20 @@ text-decoration: none;
     color: #00264d; }
 
 .experiences{
-    margin-top:50vh;
+    margin-top:30vh;
 }
 .exp-title{
     padding-left:10px;
     font-size:40px;
     color:orange;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+    background: rgba(0, 56, 112, 0.5);
 }
 .experiences .item, .projects .pcitem {
     margin-top:20px;
     display: grid;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 40px;
     grid-gap: 30px;
     grid-template-areas: "img desc desc";
     margin-block-end: 2rem;
@@ -96,10 +100,10 @@ text-decoration: none;
     border-bottom: orange 5px solid;
     border-top: orange 5px solid; }
     
-.experiences .item {
-grid-template-areas: "img desc"; }
+
 .experiences .item .img {
-    max-width: 80%; }
+    max-width: 80%; 
+}
 
 .img, .experiences .item .img {
 grid-area: img;
@@ -115,17 +119,69 @@ border: 3px #99ccff solid; }
 grid-area: desc;
 font-size: 1.5rem; }
 
-.btn, .btn-light {
-display: block;
-padding: 0.5rem 1rem;
-border: 0;
-margin-bottom: 0.3rem;
-border-radius: 2%; }
-.btn:hover, .btn-light:hover {
-    background: orange;
-    color: #000; }
+.teaching{
+    padding: 40px;
+    display:grid;
+    grid-gap: 1.5em;
+    grid-template-areas: "tdesc tdesc tdesc""taing amacss tyeducational";
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:20px;
+    padding-bottom: 40px;
+    padding-left:40px;
+    margin-block-end: 2rem;
+    background: #00264d;
+    border-bottom: orange 5px solid;
+    border-top: orange 5px solid;
+    font-size:1.5rem;
+}
 
-.btn-light {
-background: #cce6ff;
-color: #333; }
-      
+.teaching .tdesc{
+    grid-area:tdesc;
+}
+.taing{
+    grid-area:taing;
+}
+.amacss{
+    grid-area:amacss;
+}
+.tyeducational{
+    grid-area:tyeducational;
+}
+
+.taing .img, .amacss .img, .tyeducational .img{
+    max-height: 35vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.contact{
+    margin-top:20px;
+    display: grid;
+    padding: 20px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+    grid-template-areas: "img desc desc";
+    margin-block-end: 2rem;
+    background: #00264d;
+    border-bottom: orange 5px solid;
+    border-top: orange 5px solid; }
+
+
+#main-footer {
+    margin-top: 100px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background: #001a33;
+    color: #fff;
+    height: 300px;
+}
+
+footer .icons a{
+    color:orange;
+}
