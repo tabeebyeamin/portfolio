@@ -189,6 +189,9 @@ font-size: 1.5rem; }
     height: 300px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 footer .icons a{
     color:orange;
 }
