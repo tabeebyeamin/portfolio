@@ -1,0 +1,194 @@
+body {
+    background: #003366;
+    
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; }
+    body#bg-img {
+      background: url(../img/background.jpg);
+      /*background-attachment: fixed;*/
+      background-size: cover;
+      
+                /* Full height */
+        height: 100%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+      
+      body#bg-img:after {
+        content: "";
+        position: center;
+        
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background: rgba(0, 51, 102, 0.5); }
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #ffffff;
+    text-align: center;
+    min-height: 50px;
+    font-size: 25px;
+    background-color: #1558cd;
+    display: grid;
+    grid-template-areas: "intro-nav experience-nav teaching-nav projects-nav music-nav contact-nav";
+    background: #001a33;
+  }
+.header a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.greeting{
+    padding-top:15vh;
+    text-align: center;
+    font-size: 3em;
+    color:#00264d;
+}
+.greeting h2{
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+    background: rgba(0, 56, 112, 0.5);
+}
+
+
+
+.introduction{
+    padding-left:100px;
+    padding-top:100px;
+    display: grid;
+    grid-template-areas: "intro-block";
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);  
+    font-size: 1.5em;}
+
+.intro-block {
+    padding-left:50px;
+    background: #00264d;
+    padding: 1em;
+    border-bottom: orange 5px solid; }
+.text-secondary {
+    color: orange; }
+.text-primary {
+    color: #00264d; }
+
+.experiences{
+    margin-top:30vh;
+}
+.exp-title{
+    padding-left:10px;
+    font-size:40px;
+    color:orange;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+    background: rgba(0, 56, 112, 0.5);
+}
+.experiences .item, .projects .pcitem {
+    margin-top:20px;
+    display: grid;
+    padding: 40px;
+    grid-gap: 30px;
+    grid-template-areas: "img desc desc";
+    margin-block-end: 2rem;
+    background: #00264d;
+    border-bottom: orange 5px solid;
+    border-top: orange 5px solid; }
+    
+
+.experiences .item .img {
+    max-width: 80%; 
+}
+
+.img, .experiences .item .img {
+grid-area: img;
+margin: auto;
+border-radius: 20%;
+border: 3px #99ccff solid; }
+.img:hover, .experiences .pcitem .img:hover {
+    opacity: 0.5;
+    border-color: orange;
+    transition: all 0.5s ease-out; }
+
+.desc {
+grid-area: desc;
+font-size: 1.5rem; }
+
+.teaching{
+    padding: 40px;
+    display:grid;
+    grid-gap: 1.5em;
+    grid-template-areas: "tdesc tdesc tdesc""taing amacss tyeducational";
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:20px;
+    padding-bottom: 40px;
+    padding-left:40px;
+    margin-block-end: 2rem;
+    background: #00264d;
+    border-bottom: orange 5px solid;
+    border-top: orange 5px solid;
+    font-size:1.5rem;
+}
+
+.teaching .tdesc{
+    grid-area:tdesc;
+}
+.taing{
+    grid-area:taing;
+}
+.amacss{
+    grid-area:amacss;
+}
+.tyeducational{
+    grid-area:tyeducational;
+}
+
+.taing .img, .amacss .img, .tyeducational .img{
+    max-height: 35vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.contact{
+    margin-top:20px;
+    display: grid;
+    padding: 20px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+    grid-template-areas: "img desc desc";
+    margin-block-end: 2rem;
+    background: #00264d;
+    border-bottom: orange 5px solid;
+    border-top: orange 5px solid; }
+
+
+#main-footer {
+    margin-top: 100px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background: #001a33;
+    color: #fff;
+    height: 300px;
+}
+
+footer .icons a{
+    color:orange;
+}
