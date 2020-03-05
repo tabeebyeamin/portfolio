@@ -96,7 +96,7 @@ text-decoration: none;
     padding: 0rem 1rem;
     background: rgba(0, 56, 112, 0.5);
 }
-.experiences .item, .projects .pcitem {
+.experiences .item, .projects  {
     margin-top:20px;
     display: grid;
     padding: 40px;
@@ -159,6 +159,7 @@ font-size: 1.5rem;
 
 .taing .img, .amacss .img, .tyeducational .img{
     max-height: 35vh;
+    min-height: 35vh;
     display: block;    
 }
 .project_item{
@@ -195,3 +196,27 @@ html {
 footer .icons a{
     color:orange;
 }
+
+@media screen and (max-width: 1280px) {
+    .teaching{
+        grid-template-areas: "tdesc" "taing" "amacss" "tyeducational";
+        grid-template-columns: 1fr;
+
+    }
+    .experiences .item, .projects  {
+
+        grid-template-areas: "img" "desc";
+    }
+    .item {
+        text-align: center;    
+    }
+    .introduction{
+        padding-left:0px;
+        padding-top:100px;
+        display: grid;
+        grid-template-areas: "intro-block ";
+
+        grid-template-columns: 1fr;  
+        width:
+
+ }
