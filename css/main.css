@@ -20,16 +20,7 @@ body {
         background-repeat: no-repeat;
     }
       
-      body#bg-img:after {
-        content: "";
-        position: center;
-        
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
-        background: rgba(0, 51, 102, 0.5); }
+
 
 .header {
     position: fixed;
@@ -43,10 +34,7 @@ body {
     background: #001a33;
     border: #001a33 2px solid;
   }
-.nav{
-    border-bottom:  orange 3px solid;
 
-}
 .nav:hover{
     opacity: 0.6;
     border-left: rgb(255, 225, 168) 3px solid;
@@ -225,8 +213,35 @@ footer .icons a{
     color:orange;
 }
 
+@media screen and (max-width: 1400px){
+    .introduction{
+        grid-template-areas: "intro-block";
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
 
-@media screen and (max-width: 1280px) {
+ @media screen and (max-width: 900px) {
+    body#bg-img {
+        background: url(../img/backgroundmobile.jpg);
+        background-size: cover;
+        /* Full height */
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+     .header{
+        grid-template-areas: "intro-nav experience-nav teaching-nav" "projects-nav music-nav contact-nav";
+     }
+     .nav{
+        border-bottom:none;
+     }
+     .nav:hover{
+        border-top: rgb(255, 225, 168) 3px solid;
+    }
     .teaching{
         grid-template-areas: "tdesc" "taing" "amacss" "tyeducational";
         grid-template-columns: 1fr;
@@ -241,11 +256,11 @@ footer .icons a{
     }
     .introduction{
         padding-left:0px;
-        padding-top:100px;
+        padding-top:20em;
         display: grid;
         grid-template-areas: "intro-block ";
 
         grid-template-columns: 1fr;  
-        width:
 
+    }
  }
