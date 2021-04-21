@@ -38,7 +38,6 @@ body {
     color:rgb(255, 225, 168);
     text-align: center;
     min-height: 50px;
-    font-size: 25px;
     display: grid;
     grid-template-areas: "intro-nav experience-nav teaching-nav projects-nav music-nav contact-nav";
     background: #001a33;
@@ -65,7 +64,7 @@ body {
 
 .header a {
 float: left;
-font-size: 16px;
+font-size: 1em;
 color:rgb(255, 225, 168);
 text-align: center;
 padding: 14px 16px;
@@ -92,7 +91,7 @@ text-decoration: none;
     grid-template-areas: "intro-block";
     grid-gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);  
-    font-size: 1.5em;}
+    font-size: 1.25em;}
 
 .intro-block {
     padding-left:50px;
@@ -109,7 +108,7 @@ text-decoration: none;
 }
 .exp-title{
     padding-left:10px;
-    font-size:40px;
+    font-size:2em;
     color:orange;
     margin-bottom: 2rem;
     padding: 0rem 1rem;
@@ -147,7 +146,7 @@ border: 3px #99ccff solid; }
 
 .desc {
 grid-area: desc;
-font-size: 1.5rem; 
+font-size: 1.25rem; 
 }
 
 .bullet-less{
@@ -167,7 +166,7 @@ font-size: 1.5rem;
     background: #00264d;
     border-bottom: orange 5px solid;
     border-top: orange 5px solid;
-    font-size:1.5rem;
+    font-size:1.25rem;
 }
 
 .teaching .tdesc{
@@ -216,6 +215,7 @@ font-size: 1.5rem;
     background: #001a33;
     color:rgb(255, 225, 168);
     height: 300px;
+    
 }
 
 html {
