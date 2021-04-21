@@ -219,8 +219,23 @@ footer .icons a{
         grid-gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);  
     }
+
 }
 
+@media screen and (max-width: 1280px){
+    .teaching{
+        grid-template-areas: "tdesc" "taing" "amacss" "tyeducational";
+        grid-template-columns: 1fr;
+
+    }
+    .experiences .item, .projects  {
+
+        grid-template-areas: "img" "desc";
+    }
+    .item {
+        text-align: center;    
+    }
+}
  @media screen and (max-width: 900px) {
     .header a {
 
@@ -270,5 +285,6 @@ footer .icons a{
     }
     .project_item img{
         max-width: 42vh;
+        height: auto;
     }
  }
