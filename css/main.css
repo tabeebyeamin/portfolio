@@ -1,10 +1,12 @@
 body {
     background: #003366;
     
-    color: #fff;
+    color:rgb(255, 225, 168);
     height: 100vh;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Consolas, monaco, monospace;
+
+
     line-height: 1.5; }
     body#bg-img {
         background: url(../img/background.jpg);
@@ -33,19 +35,38 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    color: #ffffff;
+    color:rgb(255, 225, 168);
     text-align: center;
     min-height: 50px;
     font-size: 25px;
-    background-color: #1558cd;
     display: grid;
     grid-template-areas: "intro-nav experience-nav teaching-nav projects-nav music-nav contact-nav";
     background: #001a33;
+    border: #001a33 2px solid;
   }
+.nav{
+    border-bottom:  orange 3px solid;
+
+}
+.nav:hover{
+    opacity: 0.6;
+    border-left: rgb(255, 225, 168) 3px solid;
+    border-right: rgb(255, 225, 168) 3px solid;
+    border-bottom:  rgb(255, 225, 168) 2px solid;
+
+    transition: all 0.1s ease-in; 
+
+}
+.nav:hover > .text-secondary{
+    color:rgb(255, 225, 168)
+}
+
+
+
 .header a {
 float: left;
 font-size: 16px;
-color: white;
+color:rgb(255, 225, 168);
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
@@ -54,7 +75,7 @@ text-decoration: none;
     padding-top:15vh;
     text-align: center;
     font-size: 3em;
-    color:#00264d;
+    color:rgb(255, 225, 168);
 }
 .greeting h2{
     margin-bottom: 2rem;
@@ -193,7 +214,7 @@ font-size: 1.5rem;
     text-align: center;
     padding: 0.5em;
     background: #001a33;
-    color: #fff;
+    color:rgb(255, 225, 168);
     height: 300px;
 }
 
