@@ -35,69 +35,90 @@
                 <span class="text-secondary">Contact</span></a
             >
     </div>
-    <div class="greeting">
+    <div class="greeting" id="introduction">
         <h2>Hi, I am <span class="text-secondary">Tabeeb!</span></h2>
     </div>
-
-    <div class="introduction" id="introduction">
+    <div class="introduction">
         <div class="intro-block">
             <h2 class="text-secondary">Welcome!</h2>
             <p>
-                I am a 3rd year Computer Science Student at the University of Toronto. I enjoy programming, teaching and making music.
-                You can browse below to see the various things I've worked on and places I've worked at.
+                I am a 4th year <span class="text-secondary">Computer Science</span>  Student at the <span class="text-secondary">University of Toronto.</span> I enjoy <span class="text-secondary">programming, teaching</span> and <span class="text-secondary">making music</span>.
+                You can browse below to see the various projects I've worked on and the companies I've worked for.
             </p>
         </div>
     </div>
 
-    <div class="experiences" id="experience">
+    <div id="experience"></div>
+    <div class="experiences">
         <div class="exp-title"><h2>Internship Experience</h2></div>
         <div class="item">
-                <a href="http://github.com/tabeebyeamin" target="_blank">
-                <img src="img/confluent.png" alt="More Projects" class="img" />
-                </a>
-                <div class="desc">
-                    <h3 class="text-secondary">Confluent - Mountain View, CA</h3>
-                    <h4> Software Engineer Intern, May 2020 - August 2020</h4>
-                    <p>
-                        Coming soon!
-                    </p>
-                </div>
+            <a href="https://www.confluent.io/" target="_blank">
+            <img src="img/confluent.png" alt="More Projects" class="img" />
+            </a>
+            <div class="desc">
+                <h3 class="text-secondary">Confluent - Mountain View, CA</h3>
+                <h4> Software Engineer Intern, May 2020 - August 2020</h4>
+                <ul>
+                    <li>
+                        Developed & deployed a <span class="text-secondary">Python</span> Slack Bot using <span class="text-secondary">Django, Kubernetes, SemaphoreCI </span> that automated the creation, deletion & modification of JIRA incident tickets
+                    </li>
+                    <li>
+                        Implemented incident logging functionality with Status Page API to allow creation & modification of incidents on status page website
+                    </li>
+                    <li>
+                        Developed a <span class="text-secondary">Kubernetes</span> readiness probe which tracked the health of the authorization software pods ensuring stability of Okta group management
+                    </li>
+                </ul>
             </div>
+        </div>
         <div class="item">
-            <a href="http://github.com/tabeebyeamin" target="_blank">
+            <a href="https://www.rbcroyalbank.com/personal.html" target="_blank">
             <img src="img/rbc.jpg" alt="More Projects" class="img" />
             </a>
             <div class="desc">
                 <h3 class="text-secondary">Royal Bank of Canada -  Toronto, ON</h3>
                 <h4> DevOps Engineer Intern, September 2019 - December 2019</h4>
-                <p>
-                        Saved the company an estimated ~120 hours annually through automating cert renewal process  by creating a customizable Ansible Playbook that simultaneously generated and bound SSL certificates to any number of servers using Hashicorp Vault and Internal APIs
-                        Developed and pitched a web application idea that helps clients decide between renting or buying a home based on factors such as income, expenses, credit score/history and more using Angular and Spring Boot
-                        Using Java & Spring Boot, developed a REST endpoint that deserialized & logged JSON POSTs to fix a bug that prevented an ElasticSearch watcher from calling Ansible Scripts
-                </p>
+                <ul>
+                    <li>
+                        Saved the company an estimated ~120 hours annually through automating cert renewal process  by creating a customizable <span class="text-secondary">Ansible</span> Playbook that simultaneously generated and bound SSL certificates to any number of servers using <span class="text-secondary">Hashicorp Vault</span> and Internal APIs
+                    </li>
+                    <li>
+                        Developed and pitched a web application idea that helps clients decide between renting or buying a home based on factors such as income, expenses, credit score/history and more using <span class="text-secondary">Angular</span> and <span class="text-secondary">Spring Boot</span> 
+                    </li>
+                    <li>
+                        Using <span class="text-secondary">Java & Spring Boot, </span> developed a <span class="text-secondary">REST</span> endpoint that deserialized & logged JSON POSTs to fix a bug that prevented an <span class="text-secondary">ElasticSearch</span> watcher from calling Ansible Scripts
+                    </li>
+                </ul>
             </div>
         </div>
 
         <div class="item">
-                <a href="http://github.com/tabeebyeamin" target="_blank">
+                <a href="https://www.ifdsgroup.com/" target="_blank">
                 <img src="img/ifds.jpg" alt="More Projects" class="img" />
                 </a>
                 <div class="desc">
                     <h3 class="text-secondary">International Financial Data Services -  Toronto, ON</h3>
                     <h4> Software Developer Intern, May 2019 - August 2019</h4>
-                    <p>
-                            Accelerated merge process ~10x by creating a POC of an internal tool, the GITJIRA report, which processes GitLab merge request & JIRA task JSON data through a REST API endpoint using Java, Spring Boot, Thymeleaf & VBA
-                            Designed responsive UI for GITJIRA Report using CSS & implemented form validation with JavaScript & RegEx
-                            Expedited subversion to git Jenkins job migration by automating the cleaning up of 500+ jobs using Groovy scripts & Jenkins Email post-build plugin to filter & notify Engineers of disabled, outdated & infrequently ran builds
-                            Setup 40+ parameterized Jenkins Jobs templates for 10+ teams with newest git & GitLab configuration settings & fixed git initialization bug in Jenkins script which affected 10+ slave nodes
-                            
-                    </p>
+
+                    <ul>
+                        <li>
+                            Accelerated merge process ~10x by creating a POC of an internal tool, the GITJIRA report, which processes <span class="text-secondary">GitLab</span> merge request & JIRA task JSON data through a <span class="text-secondary">REST</span> API endpoint using <span class="text-secondary">Java, Spring Boot, Thymeleaf & VBA</span>
+                        </li>
+                        <li>
+                            Expedited <span class="text-secondary">subversion to git</span> Jenkins job migration by automating the cleaning up of 500+ jobs using <span class="text-secondary">Groovy</span> scripts & <span class="text-secondary">Jenkins</span> Email post-build plugin to filter & notify Engineers of disabled, outdated & infrequently ran builds
+                        </li>
+                        <li>
+                            Setup 40+ parameterized <span class="text-secondary">Jenkins</span> Job templates for 10+ teams with newest <span class="text-secondary">git & GitLab</span> configuration settings & fixed git initialization bug in Jenkins script which affected 10+ slave nodes
+                        </li>
+                    </ul>
                 </div>
             </div>
 
     </div>
+
+    <div class="pad" id="teaching"></div>
     <div class="exp-title"><h2>Teaching</h2></div>
-    <div class="teaching" id="teaching">
+    <div class="teaching">
         
         <div class="project_item taing">
             <a href="http://github.com/tabeebyeamin/CSCA48W20" target="_blank">
@@ -105,7 +126,24 @@
             </a>
             <h3 class=text-secondary> Tutorial content at UofT</h3>
 
-            <p>Tutorials for courses I've TA'd</p>
+            <h4>Courses I've TA'd: </h4>
+            <ul class="bullet-less">
+                <li>
+                    <span class="text-secondary">MATA30</span> - Calculus I
+                </li>
+                <li>
+                    <span class="text-secondary">MATA36</span> - Calculus II
+                </li>
+                <li>
+                    <span class="text-secondary">CSCA48</span> - Intro CS II
+                </li>
+                <li>
+                    <span class="text-secondary">CSCB09</span> - Systems Programming
+                </li>
+                <li>
+                    <span class="text-secondary">CSCB20</span> - Web Dev & Databases
+                </li>
+            </ul>
         </div>
 
         <div class="project_item amacss">
@@ -113,8 +151,24 @@
                     <img src="img/amacss.jpg" alt="More Projects" class="img" />
                 </a>
                 <h3 class=text-secondary> AMACSS Review Seminars</h3>
-
-                <p>Study materials I've created for AMACSS</p>
+                <h4>Representative for: </h4>
+                <ul class="bullet-less">
+                    <li>
+                        <span class="text-secondary">MATA31</span> - Calculus I
+                    </li>
+                    <li>
+                        <span class="text-secondary">CSCA08</span> - Intro CS I
+                    </li>
+                    <li>
+                        <span class="text-secondary">CSCA48</span> - Intro CS II
+                    </li>
+                    <li>
+                        <span class="text-secondary">CSCB07</span> - Software Design
+                    </li>
+                    <li>
+                        <span class="text-secondary">CSCB09</span> - Systems Programming
+                    </li>
+                </ul>
 
         </div>
         <div class="project_item tyeducational">
@@ -122,13 +176,38 @@
                     <img src="img/yt.png" alt="More Projects" class="img" />
                 </a>
                 <h3 class=text-secondary> TYEducational</h3>
+                <h4>Videos on these topics: </h4>
 
-                <p>Educational YouTube videos</p>
+                <ul class="bullet-less">
+                    <li>
+                        <span class="text-secondary">Calculus -</span> Derivation, 
+                    </li>
+                    <li>
+                        Integration,
+                    </li>
 
+                    <li>
+                        Sequences & Series
+                    </li>
+
+
+                    <li>
+                        <span class="text-secondary">Computer Science - </span>  
+                    </li>
+                    <li>
+                        Data Structures &
+                    </li>
+                    <li>
+                        Algorithms
+                    </li>
+                </ul>
         </div>
     </div>
+
+    <div class="pad" id="projects"></div>
+
     <div class="exp-title"><h2>Programming Projects</h2></div>
-    <div class="teaching" id="projects">
+    <div class="teaching">
         
         <div class="project_item taing">
             <a href="https://github.com/tabeebyeamin/KLP-Bot" target="_blank">
@@ -137,6 +216,7 @@
 
             <h3 class=text-secondary> KLP-Bot</h3>
             <p>Slackbot that keeps track of item prices</p>
+            <p> <span class="text-secondary">Technologies: </span> Python, BeautifulSoup, SQLite</p>
 
         </div>
         <div class="project_item amacss">
@@ -146,6 +226,7 @@
             <h3 class=text-secondary> Project Anything</h3>
 
             <p>Web Based Digital Audio Workstation</p>
+            <p> <span class="text-secondary">Technologies: </span> HTML, CSS, JavaScript, Node.js, Express, MongoDB</p>
 
         </div>
         <div class="project_item tyeducational">
@@ -155,13 +236,16 @@
             <h3 class=text-secondary> DFI FinTech Chatbot</h3>
 
             <p>Web application prototype of FinTech chatbot</p>
+            <p> <span class="text-secondary">Technologies: </span> HTML, CSS, Java, Spring Boot, JSoup, IBM Watson</p>
 
 
         </div>
 
     </div>
+    <div class="pad" id="music"></div>
+
     <div class="exp-title"><h2>Music</h2></div>
-    <div class="teaching" id="music">
+    <div class="teaching">
         
         <div class="tdesc">
                 When I am not coding, I like to play guitar and sing. 
@@ -209,8 +293,8 @@
                 </a>
             </div>
 
-        <h2>Contact me at <span class="text-secondary">tabeebyeamin@gmail.com</span></h2>
-        <p>Designed by Tabeeb Yeamin Copyright &copy; 2019</p>
+        <h2>Email me at <span class="text-secondary">tabeebyeamin@gmail.com</span></h2>
+        <p>Designed by Tabeeb Yeamin Copyright &copy; 2021</p>
     </footer>
 
 </body>
