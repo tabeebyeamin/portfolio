@@ -4,16 +4,14 @@ body {
     color: #fff;
     height: 100vh;
     margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5; }
     body#bg-img {
-      background: url(../img/background.jpg);
-      /*background-attachment: fixed;*/
-      background-size: cover;
-      
-                /* Full height */
+        background: url(../img/background.jpg);
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        /* Full height */
         height: 100%; 
-
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
@@ -115,7 +113,7 @@ text-decoration: none;
 .img, .experiences .item .img {
 grid-area: img;
 margin: auto;
-border-radius: 20%;
+border-radius: 5%;
 border: 3px #99ccff solid; }
 .img:hover, .experiences .pcitem .img:hover {
     opacity: 0.5;
@@ -160,7 +158,8 @@ font-size: 1.5rem;
 .taing .img, .amacss .img, .tyeducational .img{
     max-height: 35vh;
     min-height: 35vh;
-    display: block;    
+    display: block;
+    cursor:pointer;    
 }
 .project_item{
     text-align: center;
