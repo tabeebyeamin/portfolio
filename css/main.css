@@ -222,6 +222,11 @@ footer .icons a{
 }
 
  @media screen and (max-width: 900px) {
+    .header a {
+
+        font-size: 0.75em;
+
+    }
     body#bg-img {
         background: url(../img/backgroundmobile.jpg);
         background-size: cover;
@@ -262,5 +267,8 @@ footer .icons a{
 
         grid-template-columns: 1fr;  
 
+    }
+    .project_item img{
+        max-width: 42vh;
     }
  }
