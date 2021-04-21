@@ -54,7 +54,7 @@ body {
     border-right: rgb(255, 225, 168) 3px solid;
     border-bottom:  rgb(255, 225, 168) 2px solid;
 
-    transition: all 0.1s ease-in; 
+    transition: all 0.05s ease-in; 
 
 }
 .nav:hover > .text-secondary{
